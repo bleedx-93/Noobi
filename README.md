@@ -2,7 +2,9 @@
 A Simple tool to execute shellcode with the ability to detect mouse movement
 
 Features:
-- Mouse movement detection in order to bypass sandboxes
+- Sandbox evasion through detecting mouse movement and hardware resources
+  - If in 10 seconds the mouse cursor didn't move it would terminate it self
+  - If the CPU core are less than 2 and the RAM is less than 2048 it would terminate it self
 - Using HeapAlloc instead of VirtualAlloc
 - Dynamic API resolution
 - String Obfuscation
